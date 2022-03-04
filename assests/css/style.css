@@ -6,6 +6,8 @@ font-family: 'Akronim', cursive; */
 body {
   margin: 0px;
   padding: 0px;
+  background-color: rgb(24, 24, 24);
+    color: rgb(211, 211, 211);
 }
 .homediv {
   padding: 20px;
@@ -14,30 +16,131 @@ body {
   font-family: "Akronim", cursive;
   text-align: center;
   font-size: 36px;
-  color: #000;
+     color: rgb(211, 211, 211);
   margin-bottom: 50px;
+  font-weight: 600;
 }
 .coldiv {
   margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 .coldiv h2 {
   font-family: "Akaya Kanadaka", cursive;
   text-align: center;
   font-size: 28px;
-  color: #000;
+      color: rgb(211, 211, 211);
   text-transform: uppercase;
   cursor: pointer;
 }
 .coldiv img {
   width: 100%;
   height: 300px;
+  object-fit: cover;
+  cursor: pointer;
 }
+.neonbtn {
+position: absolute;
+    display: block;
+    bottom: -76px;
+    padding: 8px 40px;
+    margin: 12px auto;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 4px;
+  letter-spacing : 4px;
+  text-decoration: none;
+  cursor: pointer;
+-webkit-box-reflect: below 10px linear-gradient(transparent,transparent,rgba(0,0,0,.13333333333333333));
+}
+.neonbtn:link , .neonbtn:active {
+  color : #fff;
+}
+.neonbtn:hover {
+  background : #fff;
+  color : #050801;
+  box-shadow : 0 0 5px #fff,
+                0 0 25px #fff,
+              0 0 50px #fff,
+              0 0 200px #fff;
+}
+.neonbtn span {
+  position : absolute;
+  display : block;
+}
+
+.neonbtn span:nth-child(1) {
+  top : 0;
+  left : -100%;
+  width : 100%;
+  height :2px;
+  background : linear-gradient(90deg,transparent,#fff);
+  animation : animate1 1s linear infinite;
+}
+@keyframes animate1 {
+  0% {left : -100%}
+  50%,100%{left :100%}
+}
+
+.neonbtn span:nth-child(2) {
+  top : -100%;
+  right : 0;
+  height : 100%;
+  width :2px;
+  background : linear-gradient(180deg,transparent,#fff);
+  animation : animate2 1s linear infinite;
+  animation-delay : 0.25s;
+}
+@keyframes animate2 {
+  0% {top : -100%}
+  50%,100%{top :100%}
+}
+
+
+.neonbtn span:nth-child(3) {
+  bottom : 0;
+  right : -100%;
+  width : 100%;
+  height :2px;
+  background : linear-gradient(90deg,transparent,#fff);
+  animation : animate3 1s linear infinite;
+  animation-delay : 0.5s;
+}
+@keyframes animate3 {
+  0% {right : -100%}
+  50%,100%{right :100%}
+}
+
+
+.neonbtn span:nth-child(4) {
+  left : 0;
+  bottom : -100%;
+  width : 2px;
+  height :100%;
+  background : linear-gradient(90deg,transparent,#fff);
+  animation : animate4 1s linear infinite;
+  animation-delay : 0.75s;
+}
+@keyframes animate4 {
+  0% {bottom : -100%}
+  50%,100%{bottom :100%}
+}
+
 .divblack {
   background-color: #000;
   height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 .divblack p {
   font-family: "Akaya Kanadaka", cursive;
@@ -205,10 +308,17 @@ margin: 20px 0 10px;
 font-family: 'Akaya Kanadaka', cursive;
 background-color: #61000a;
 color: #fff;
-font-family: 800;
-padding: 2px 8px;
+font-weight: 800;
+padding: 2px 16px;
+border: 2px solid #fff;
 font-size: 26px;
 text-decoration: none;
+}
+.modal-content{
+  background-color: rgb(24, 24, 24);
+}
+.btn-close{
+  background-color: #fff;
 }
 .bottomline{
 border: 4px solid #edac3c;
@@ -247,10 +357,192 @@ border: 4px solid #edac3c;
 
 
 }
+@media(min-width:1420px){
+.homediv h1 {
+    font-size: 64px;
+    padding-top: 15px;
+    margin-bottom: 70px;
+}
+.coldiv h2 {
+  font-size: 45px;
+    margin-bottom: 12px;
+}
+.coldiv img{
+  height: 450px;
+}
+.divblack{
+  height: 450px;
+}
+.divblack p{
+  font-size: 65px;
+}
+.piraimg {
+    height: 500px;
+}
+.modal-dialog {
+    max-width: 800px;
+    top: 50%;
+    transform: translateY(-50%) !important;
+}
+.flexbtn a {
+    
+    padding: 2px 24px;
+    font-size: 35px;
+ 
+}
+  .bottomline{
+    max-width: 615px;
+    top: -20px;
+  }
+  .bottomline img {
+  width: 51px;
+    height: 46px;
+    margin: 9px 6px;
+}
+.divtopimg {
+    top: 50px;
+    left: 328px;
+}
+.divtopimg img {
+ width: 135px;
+    height: 35px;
+}
+.div1img {
+     top: 150px;
+    left: 380px;
+}
+.div1img img {
+   width: 50px;
+    height: 50px;
+}
+.div2img {
+  top: 213px;
+    left: 341px;
+}
+.d2im1 {
+       width: 50px;
+    height: 42px;
+}
+.d2im2 {
+    width: 50px;
+    height: 42px;
+     margin-left: 25px;
+}
+.div3img {
+   top: 266px;
+    left: 306px;
+}
+.d3im1 {
+    width: 50px;
+    height: 42px;
+}
+.d3im2 {
+       width: 50px;
+    height: 42px;
+     margin-left: 25px;
+}
+.d3im3 {
+       width: 50px;
+    height: 42px;
+     margin-left: 25px;
+}
+.div4img {
+  top: 321px;
+    left: 267px;
+}
+.d4im1 {
+     width: 50px;
+    height: 42px;
+}
+.d4im2 {
+       width: 50px;
+    height: 42px;
+     margin-left: 25px;
+}
+.d4im3 {
+      width: 50px;
+    height: 42px;
+     margin-left: 25px;
+}
+.d4im4 {
+       width: 50px;
+    height: 42px;
+     margin-left: 25px;
+}
+.div5img {
+    top: 378px;
+    left: 203px;
+
+}
+.d5im1 {
+    width: 50px;
+    height: 42px;
+}
+.d5im2 {
+      width: 50px;
+    height: 42px;
+     margin-left: 25px;
+}
+.d5im3 {
+       width: 50px;
+    height: 42px;
+     margin-left: 25px;
+}
+.d5im4 {
+       width: 50px;
+    height: 42px;
+     margin-left: 25px;
+}
+.d5im5 {
+       width: 50px;
+    height: 42px;
+     margin-left: 25px;
+}
+.div6img {
+      top: 435px;
+    left: 170px;
+}
+.d6im1 {
+     width: 50px;
+    height: 42px;
+}
+.d6im2 {
+       width: 50px;
+    height: 42px;
+     margin-left: 25px;
+}
+.d6im3 {
+       width: 50px;
+    height: 42px;
+     margin-left: 25px;
+}
+.d6im4 {
+      width: 50px;
+    height: 42px;
+     margin-left: 25px;
+}
+.d6im5 {
+     width: 50px;
+    height: 42px;
+     margin-left: 25px;
+}
+.d6im6 {
+       width: 50px;
+    height: 42px;
+     margin-left: 25px;
+}
+}
+@media(max-width:768px){
+  .coldiv{
+    margin-bottom: 130px;
+  }
+}
 @media(max-width:505px){
   .modal-dialog{
     width: 375px;
     margin: auto;
+    top: 50%;
+    transform: translateY(-50%) !important;
 }
 .piraimg {
     width: 100%;
